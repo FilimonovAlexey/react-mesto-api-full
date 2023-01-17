@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const { celebrate, Joi } = require('celebrate');
 const { errors } = require('celebrate');
+const { cors } = require('cors');
 const bodyParser = require('body-parser');
 const auth = require('./middlewares/auth');
 
@@ -16,6 +17,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/mestodb');
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cors());
 
 app.post(
   '/signup',
