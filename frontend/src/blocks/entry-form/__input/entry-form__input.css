@@ -1,0 +1,16 @@
+.entry-form__input {
+  width: 358px;
+  min-height: 27px;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #cccccc;
+  background-color: black;
+  color: white;
+}

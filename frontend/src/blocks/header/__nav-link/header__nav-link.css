@@ -1,0 +1,12 @@
+.header__nav-link {
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration: none;
+  display: inline;
+  color: white;
+  transition: .3s;
+}
+
+.header__nav-link:hover {
+  opacity: .6;
+}
