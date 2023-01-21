@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const { celebrate, Joi } = require('celebrate');
 const { errors } = require('celebrate');
-const { cors } = require('cors');
+const cors = require('cors');
 const bodyParser = require('body-parser');
 const auth = require('./middlewares/auth');
 
