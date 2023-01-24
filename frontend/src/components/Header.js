@@ -2,11 +2,12 @@ import logo from "../images/logo.svg";
 import { Link } from "react-router-dom";
 
 function Header(props) {
+  console.log(props);
   return (
     <header className="header">
       <img className="header__logo" src={logo} alt="лого место" />
       <div style={{ display: "flex" }}>
-        <p className="header__email">{props.userData.data.email}</p>
+        <p className="header__email">{props.userData.email}</p>
         <Link
           to="/sign-in"
           className="header__nav-link"
